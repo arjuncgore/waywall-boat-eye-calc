@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Waywall Boat Eye Utils</title>
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Waywall Boat Eye Utils</title>
+        <link rel="stylesheet" href="/public/css/main.css">
+    </head>
+    <body>
         <h1>Reverse Boat Eye Calculator</h1>
         <form method="POST" id="form1">
-            
-            <label id="dpi_label" for="dpi">
-                DPI:
-                <textarea id="dpi_input" name="dpi"></textarea>
+
+            <label id="dpi_label" for="dpi_input">
+                Mouse DPI:
+                <input id="dpi_input" name="dpi">
             </label>
 
-            <label id="mc_sens_label" for="mc_sens">
-                Enter Minecraft Sensitivity (options.txt/standardsettings.txt):
-                <textarea id="mc_sens_input" name="mc_sens"></textarea>
+            <label id="mc_sens_label1" for="mc_sens_input1">
+                Minecraft Sensitivity (from options.txt):
+                <input id="mc_sens_input1" name="mc_sens1">
             </label>
 
-            <label id="win_sens_label" for="win_sens">
-                Enter Windows Sensitivity:
-                <textarea id="win_sens_input" name="win_sens"></textarea>
+            <label id="win_sens_label" for="win_sens_input">
+                Windows Sensitivity (0-20):
+                <input id="win_sens_input" name="win_sens">
             </label>
 
-                <button type="submit">Calculate</button>
+            <button type="submit" id="calc1">Calculate</button>
         </form>
 
-</body>
+        <div id="error1" class="error" hidden></div>
+        <div id="results1" hidden></div>
+
+
+        <h1>MCSR Calcsens Online</h1>
+        <form method="POST" id="form2">
+
+            <label id="mc_sens_label2" for="mc_sens_input2">
+                Minecraft Sensitivity (from options.txt):
+                <input id="mc_sens_input2" name="mc_sens2">
+            </label>
+
+            <button type="submit" id="calc2">Calculate</button>
+        </form>
+
+        <div id="error2" class="error" hidden></div>
+        <div id="results2" hidden></div>
+
+        <script src="/public/js/reverse_boat_eye.js"></script>
+        <script src="/public/js/mcsr-calcsens.js"></script>
+
+    </body>
 </html>
 
