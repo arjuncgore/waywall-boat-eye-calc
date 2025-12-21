@@ -66,22 +66,22 @@ if (calcButton1) {
         const win   = winSensInput.value.trim();
 
         if (!dpi || !mc || !win) {
-            return errorCheck2("Fill in all fields");
+            return errorCheck1("Fill in all fields");
         }
         const dpiNum = Number(dpi);
         const mcNum = Number(mc);
         const winNum = Number(win);
 
         if (!Number.isInteger(dpiNum) || dpiNum <= 0) {
-            return errorCheck2("DPI must be a positive whole number.");
+            return errorCheck1("DPI must be a positive whole number.");
         }
 
         if (isNaN(mcNum) || mcNum < 0 || mcNum > 1) {
-            return errorCheck2("Minecraft sensitivity must be a number between 0 and 1.");
+            return errorCheck1("Minecraft sensitivity must be a number between 0 and 1.");
         }
 
         if (!Number.isInteger(winNum) || winNum < 0 || winNum > 20) {
-            return errorCheck2("Windows Sensitivity must be a whole number from 0 to 20.");
+            return errorCheck1("Windows Sensitivity must be a whole number from 0 to 20.");
         }
 
         errorDiv1.hidden = true;

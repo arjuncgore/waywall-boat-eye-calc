@@ -64,7 +64,7 @@ function calcSensJS(
     };
 }
 
-const r6 = (x) => Number(x.toFixed(6));
+const r8 = (x) => Number(x.toFixed(8));
 
 
 // ==== Form Submission ====
@@ -112,9 +112,9 @@ if (calcButton2) {
             "Waywall Tall Sensitivity: ",
         ]
         const values = [
-            r6(mcOut),
-            r6(normal),
-            r6(tall)
+            r8(mcOut),
+            r8(normal),
+            r8(tall)
         ];
 
 
