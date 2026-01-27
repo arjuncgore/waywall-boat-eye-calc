@@ -156,3 +156,23 @@ button:focus-visible {
     align-self: flex-start;
 }
 
+/* Sensitivity row: split horizontally with centered "or" */
+.sensitivity-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sensitivity-row > label {
+    flex: 1 1 0;
+}
+
+.or-divider {
+    display: inline-block;
+    color: var(--muted);
+    font-weight: 600;
+    text-align: center;
+    padding: 0 4px;
+    min-width: 28px;
+}
+
