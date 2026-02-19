@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <div class="panel">
-                <h1>Reverse Boat Eye Calculator</h1>
+                <h1>Waywall Sensitivities</h1>
                 <form method="POST" id="form1">
 
                     <label id="dpi_label" for="dpi_input">
@@ -22,10 +22,17 @@
                         <input id="mc_sens_input1" name="mc_sens1">
                     </label>
 
-                    <label id="win_sens_label" for="win_sens_input">
-                        Windows Sensitivity (0-20):
-                        <input id="win_sens_input" name="win_sens">
-                    </label>
+                    <div class="sensitivity-row">
+                        <label id="win_sens_label" for="win_sens_input">
+                            Windows Sensitivity (1-20):
+                            <input id="win_sens_input" name="win_sens">
+                        </label>
+                        <span class="or-divider">or</span>
+                        <label id="linux_sens_label" for="linux_sens_input">
+                            Linux Sensitivity (-1 to 1):
+                            <input id="linux_sens_input" name="linux_sens">
+                        </label>
+                    </div>
 
                     <button type="submit" id="calc1">Calculate</button>
                 </form>
@@ -35,7 +42,7 @@
             </div>
 
             <div class="panel">
-                <h1>MCSR Calcsens Online</h1>
+                <h1>Linux Boat Eye Calc</h1>
                 <form method="POST" id="form2">
 
                     <label id="mc_sens_label2" for="mc_sens_input2">

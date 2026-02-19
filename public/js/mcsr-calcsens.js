@@ -1,3 +1,4 @@
+(() => {
 // ======== Part 2: MCSR Calcsens Online ========
 // ==== Document Elements ====
 const mcSensInput2  = document.getElementById("mc_sens_input2");
@@ -134,4 +135,6 @@ if (calcButton2) {
 
     });
 }
+
+})();
 
