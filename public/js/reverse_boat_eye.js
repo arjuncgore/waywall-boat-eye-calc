@@ -192,6 +192,7 @@ if (calcButton1) {
             null           // auto-compute tall coef
         );
 
+        let mcOut = 0.02291165;
         let normal = result.normalCoef;
         let tall = result.tallCoef;
 
@@ -200,10 +201,12 @@ if (calcButton1) {
         const dl = document.createElement("dl");
 
         const titles = [
+            "New Minecraft Sensitivity: ",
             "Waywall Normal Sensitivity: ",
             "Waywall Tall Sensitivity: ",
         ]
         const values = [
+            mcOut,
             r8(normal),
             r8(tall)
         ]
